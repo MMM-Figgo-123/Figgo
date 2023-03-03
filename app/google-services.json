@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "546470147870",
+    "project_id": "figgo-live",
+    "storage_bucket": "figgo-live.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:546470147870:android:8c608b713e9660532b3b0f",
+        "android_client_info": {
+          "package_name": "com.figgo.customer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "546470147870-0qv1hacc05ul4o2epduapmgh3slq8ltf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAMMoR39CI0XIarP67d5BDFBVVuSKUGyJE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "546470147870-0qv1hacc05ul4o2epduapmgh3slq8ltf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

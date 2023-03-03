@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorlightblue"
+    tools:context=".UI.PaymentMethodActivity">
+
+
+    <include layout="@layout/headerbackwithnotification"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/choose_user"
+        android:layout_width="match_parent"
+        android:layout_height="510dp"
+        android:layout_marginStart="@dimen/_18sdp"
+        android:layout_marginEnd="@dimen/_18sdp"
+        android:visibility="visible"
+        android:layout_marginTop="-60dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.590">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/nextpage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:fontFamily="sans-serif-black"
+                android:textColor="@color/black"
+                android:text="Payment Gateway"
+                android:textSize="@dimen/_14sdp" />
+
+
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_nxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="Click Here"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:padding="5dp"
+            android:background="@color/colorRed" />
+
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/car"
+        android:scaleType="centerCrop"
+        android:layout_width="wrap_content"
+        android:layout_height="90dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottombuttonbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:src="@drawable/figgofooter"/>
+
+
+</LinearLayout>

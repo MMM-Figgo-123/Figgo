@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#B9E5FA"
+            android:orientation="vertical"
+            tools:context=".UI.DashBoard">
+
+            <include
+                android:id="@+id/layout"
+                layout="@layout/dashboard_header_layout"
+                app:layout_constraintBottom_toTopOf="@id/backgrouund"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <!-- <LinearLayout
+                 android:id="@+id/ll1"
+                 android:layout_width="match_parent"
+                 android:layout_height="43dp"
+                 android:background="@drawable/dashboard_white_searchbar"
+                 android:layout_marginTop="-18dp"
+                 android:layout_marginLeft="12sp"
+                 android:layout_marginRight="12sp">-->
+
+            <TextView
+                android:id="@+id/live_loc"
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginTop="-12dp"
+                android:visibility="visible"
+                android:layout_marginStart="6dp"
+                android:layout_marginEnd="6dp"
+                android:background="@drawable/dashboard_white_searchbar"
+                android:padding="9dp"
+                android:layout_height="wrap_content"
+                android:hint="Current location"/>
+
+
+            <!-- </LinearLayout>-->
+
+
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                />
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.core.widget.NestedScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+
+
+                 <!--       <LinearLayout
+                            android:id="@+id/backgrouund"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            app:layout_constraintTop_toBottomOf="@id/layout"
+                            tools:ignore="MissingConstraints">-->
+                        <include
+                            layout="@layout/layouthometop"
+                            android:visibility="visible"
+                            android:id="@+id/home_top"
+                            />
+
+                            <FrameLayout
+                                android:id="@+id/framedash"
+                                android:layout_width="match_parent"
+                                android:layout_marginHorizontal="@dimen/_6sdp"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="@dimen/_2sdp"
+                                app:layout_constraintBottom_toTopOf="@+id/car"
+                                app:layout_constraintTop_toBottomOf="@+id/layout" />
+
+
+
+<include
+    layout="@layout/layouthome"
+    android:visibility="visible"
+    android:id="@+id/homebottom"
+    />
+                    </LinearLayout>
+                </androidx.core.widget.NestedScrollView>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/navigation_bar"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/white"
+            android:padding="5dp"
+            android:textAlignment="center"
+            app:itemIconTint="@color/white"
+            app:itemRippleColor="@color/purple_200"
+            app:itemTextColor="@drawable/bottomnavtextcolor"
+            app:labelVisibilityMode="labeled"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:menu="@menu/driver_dashboard_menu" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    <!--include
+    layout="@layout/bottom_button_layout"
+    android:id="@+id/bottombuttonbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintBottom_toBottomOf="parent" />-->
+
+
+</layout>

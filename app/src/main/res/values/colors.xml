@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="light_grey">#EBEBEB</color>
+    <color name="colorlightblue">#54C5CF</color>
+    <color name="colorpurple">#D861FF</color>
+    <color name="coloryellow">#FEE300</color>
+    <color name="colorRed">#EE1D23</color>
+    <color name="colorcoffie">#EEEEEE</color>
+    <color name="grey">#aaa</color>
+    <color name="colornavyblue">#000F3B</color>
+    <color name="appcolorlight">#394466</color>
+    <color name="colormenutransparent">#E8E9E8</color>
+    <color name="colorlightpurple">#CBC3E3</color>
+    <color name="colorbluedark">#3C2B99</color>
+    <color name="coloryellowlight">#FFF5B4</color>
+    <color name="colorgreen">#00FF00</color>
+    <color name="green">#0C660C</color>
+    <color name="colorbluedashboard">#A2D9F7</color>
+    <color name="colorbrinjaldashboard">#A89ECD</color>
+
+    <!-- dots inactive colors -->
+    <color name="dot_dark_screen1">#aaa</color>
+    <color name="dot_dark_screen2">#aaa</color>
+    <color name="dot_light_screen1">#fff</color>
+
+    <!-- dots active colors -->
+
+    <color name="dot_light_screen2">#fff</color>
+    <color name="quantum_bluegrey700">#455A64</color>
+
+    <array name="array_dot_active">
+        <item>@color/dot_light_screen1</item>
+        <item>@color/dot_light_screen2</item>
+    </array>
+
+    <array name="array_dot_inactive">
+        <item>@color/dot_dark_screen1</item>
+        <item>@color/dot_dark_screen2</item>
+    </array>
+
+</resources>

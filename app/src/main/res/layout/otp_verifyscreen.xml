@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_40sdp"
+            android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/ic_chat"
+        android:layout_gravity="center"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OTP Verification"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_15sdp"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#585D5D"
+        android:text="@string/otp_text"
+        android:layout_marginBottom="30dp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_8sdp"
+        android:hint="Enter OTP"
+        android:inputType="number"
+        android:maxLength="6"
+        android:id="@+id/enteredOTP"
+        android:layout_marginVertical="@dimen/_10sdp"
+        android:background="@drawable/edittext" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="V E R I F Y"
+        android:id="@+id/otp_Verify_button"
+        android:textColor="@color/white"
+        android:background="@drawable/continue_background"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#585D5D"
+        android:textStyle="bold"
+        android:id="@+id/resend"
+        android:layout_marginBottom="30dp"/>
+
+
+</LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
